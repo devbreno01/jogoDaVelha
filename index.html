@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main>
+    <h1>JOGO DA VELHA</h1>
+    <div id="buttons-container">
+            <button id="2-players">Multiplayer</button>
+            <button id="ai-player"> SinglePlayer</button>
+    </div>
+
+    <div id="container" class="hide"> <!--A CLASS HIDE serve para estilazarmos no css, quando o tabuleiro do jogo da velha deve aparecer ou não-->
+                                            <!--Terão 9 divs para cada quadrado do tabuleiro -->
+        <div class="box" id="block-1"></div>  <!--Aqui o ID serve para saber em que block o jogador jogou(js)-->
+        <div class="box" id="block-2"></div>
+        <div class="box" id="block-3"></div>
+        <div class="box" id="block-4"></div>
+        <div class="box" id="block-5"></div>
+        <div class="box" id="block-6"></div>
+        <div class="box" id="block-7"></div>
+        <div class="box" id="block-8"></div>
+        <div class="box" id="block-9"></div>
+        
+        <div id="score-container"><!--Representão o PLACAR-->
+            <h2>Placar:</h2>
+            <span class="score-box">
+                <span id="x-scoreboard">X</span> <span>:</span> <!--SCORE DO JOGADOR X-->
+                <span id="scoreboard-1">0</span>
+            </span> 
+            <span class="score-box">
+                <span id="o-scoreboard"></span> <span>:</span>  <!--SCORE DO JOGADOR BOLA-->
+                <span id="scoreboard-2">0</span>
+            </span> 
+
+        </div>
+    </div>
+
+    <div class="hide"> <!--ELEMENTOS DE X E BOLINHA-->
+        <div class="x">X</div>
+        <div class="o"></div>
+    </div>
+
+    <div id="massage" class="hide"> <!--DIV DA MENSAGEM DE VENCEDOR -->
+            <p>pp</p>
+    </div>
+    <script src="js/script.js"></script>
+</main>
+</body>
+</html>
